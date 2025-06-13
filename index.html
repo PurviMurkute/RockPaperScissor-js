@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
   <head>
     <title>RockPaperScissor</title>
     <link rel="stylesheet" href="style.css" />
@@ -11,12 +10,12 @@
         <div class="human-container card">
           <h2 class="text-color text-center">Human</h2>
           <h3 id="h-Score" class="text-color text-center">0</h3>
-          <h3 id="human-move">-</h3>
+          <h3 id="human-move" class="text-center text-color">-</h3>
         </div>
         <div class="computer-container card">
           <h2 class="text-color text-center">Computer</h2>
           <h3 id="c-Score" class="text-color text-center">0</h3>
-          <h3 id="computer-move">-</h3>
+          <h3 id="computer-move" class="text-center text-color">-</h3>
         </div>
       </div>
       <h2 id="winning-msg" class="text-color text-center">Start Game</h2>
@@ -32,6 +31,7 @@
         </button>
       </div>
     </div>
+    <button type="button" class="reset-btn" onclick="resetGame()">Reset</button>
     <script src="script.js"></script>
   </body>
 </html>

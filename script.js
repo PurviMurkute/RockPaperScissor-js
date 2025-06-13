@@ -4,6 +4,7 @@ const winningMsg = document.querySelector("#winning-msg");
 const hScoreContainer = document.querySelector("#h-Score")
 const cScoreContainer = document.querySelector("#c-Score")
 
+
 function computerMove() {
   const moves = ["rock", "paper", "scissor"];
   const randomIndex = Math.floor(Math.random() * moves.length);
@@ -29,4 +30,8 @@ function playMove(humanMove) {
     winningMsg.innerText = "You Lose!";
     cScoreContainer.innerText = parseInt(cScoreContainer.innerText) + 1;
   }
+}
+
+function resetGame(){
+    window.location.reload();
 }
