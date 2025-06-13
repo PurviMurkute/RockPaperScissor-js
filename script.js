@@ -18,7 +18,8 @@ function playMove(humanMove) {
   console.log(computerTurn);
 
   if (humanMove === computerTurn) {
-    winningMsg.innerText = "Draw";
+    winningMsg.innerText = "it's a Tie!";
+    winningMsg.style.color = "orange";
   } else if (
     (humanMove === "rock" && computerTurn === "scissor") ||
     (humanMove === "scissor" && computerTurn === "paper") ||
@@ -26,9 +27,11 @@ function playMove(humanMove) {
   ) {
     winningMsg.innerText = "You Win!";
     hScoreContainer.innerText = parseInt(hScoreContainer.innerText) + 1; 
+    winningMsg.style.color = "green";
   } else {
     winningMsg.innerText = "You Lose!";
     cScoreContainer.innerText = parseInt(cScoreContainer.innerText) + 1;
+    winningMsg.style.color = "red";
   }
 }
 
