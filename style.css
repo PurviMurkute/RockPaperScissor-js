@@ -1,0 +1,48 @@
+.body{
+    background-color: antiquewhite;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    border: 1px solid blueviolet;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.text-color{
+    color: blueviolet;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.game-img{
+    width: 20px;
+}
+
+.btn{
+    margin: 20px;
+    width: 100px;
+    padding: 5px 3px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
