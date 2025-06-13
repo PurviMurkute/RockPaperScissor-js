@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>RockPaperScissor</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body class="body">
-    <div>
-    <h1 class="heading text-color text-center">RockPaperScissor</h1>
-    <div class="container">
+  </head>
+  <body class="body">
+    <div class="game-container">
+      <h1 class="heading text-color text-center">RockPaperScissor</h1>
+      <div class="container d-flex">
         <div class="human-container card">
-            <h2 class="text-color text-center">Human</h2>
-            <h3 id="Score" class="text-color text-center">0</h3>
-            <h3 id="human-move">-</h3>
+          <h2 class="text-color text-center">Human</h2>
+          <h3 id="h-Score" class="text-color text-center">0</h3>
+          <h3 id="human-move">-</h3>
         </div>
         <div class="computer-container card">
-            <h2 class="text-color text-center">Computer</h2>
-            <h3 id="Score" class="text-color text-center">0</h3>
-            <h3 id="computer-move">-</h3>
+          <h2 class="text-color text-center">Computer</h2>
+          <h3 id="c-Score" class="text-color text-center">0</h3>
+          <h3 id="computer-move">-</h3>
         </div>
-    </div>
-    <div class="btn-container">
-        <button type="button" class="btn" onclick="playMove('rock')">Rock <img src="rock.png" alt="rock" class="game-img" /></button>
-        <button type="button" class="btn" onclick="playMove('paper')">Paper <img src="paper.png" alt="Scissor" class="game-img"/></button>
-        <button type="button" class="btn" onclick="playMove('scissor')">Scissor <img src="scissor.png" alt="scissor" class="game-img"/></button>
-    </div>
+      </div>
+      <h2 id="winning-msg" class="text-color text-center">Start Game</h2>
+      <div class="btn-container d-flex">
+        <button type="button" class="btn" onclick="playMove('rock')">
+          Rock <img src="rock.png" alt="rock" class="game-img" />
+        </button>
+        <button type="button" class="btn" onclick="playMove('paper')">
+          Paper <img src="paper.png" alt="Scissor" class="game-img" />
+        </button>
+        <button type="button" class="btn" onclick="playMove('scissor')">
+          Scissor <img src="scissor.png" alt="scissor" class="game-img" />
+        </button>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

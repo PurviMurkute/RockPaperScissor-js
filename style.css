@@ -2,15 +2,26 @@
     background-color: antiquewhite;
 }
 
-.container{
+.d-flex{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.game-container{
+    background-color: #f2ccff;
+    border: 1px solid blueviolet;
+    width: 550px;
+    display: block;
+    margin: 10px auto;
+    padding: 30px 10px;
+    border-radius: 15px;
 }
 
 .card{
     border: 1px solid blueviolet;
     padding: 15px 20px;
-    margin: 10px 0;
+    width: 150px;
+    margin: 20px;
     border-radius: 20px;
 }
 
@@ -22,10 +33,6 @@
     text-align: center;
 }
 
-.btn-container{
-    display: flex;
-    justify-content: center;
-}
 
 .game-img{
     width: 20px;
@@ -46,3 +53,11 @@
     transform: scale(1.1);
 }
 
+#winning-msg{
+    animation: pop 0.5s ease forwards;
+}
+
+@keyframes pop {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
